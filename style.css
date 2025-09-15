@@ -1,0 +1,104 @@
+.flex-container {
+    display: flex;
+}
+
+html {
+    background-color: antiquewhite;
+}
+
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.horizontal-rev {
+    flex-direction: row-reverse;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+p, ul, li{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+#my-name {
+    vertical-align: middle;
+    margin: 5%;
+    margin-right: 20%;
+    flex: 50%;
+}
+
+#my-name p {
+    font-size: large;
+}
+
+.description {
+    font-style: italic;
+}
+
+.projects >*{
+    text-align: center;
+    margin: 2%;
+    flex: 33%;
+}
+
+.proj-img {
+    flex: 90%;
+    max-width: 90%; 
+    margin: 1%;
+    width: auto;
+    height: auto;
+}
+
+.lists >*{
+    text-align: left;
+    flex: 40%;
+    margin: 2.5%;
+}
+
+.footer {
+    text-align: right;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+#portrait {
+    flex: 30%;
+    max-width: 30%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    vertical-align: middle;
+}
+
+#photoself {
+    max-width: 90%; 
+    margin: 1%;
+    margin-top: 25%;
+    width: auto;
+    height: auto;
+    max-height: 300px;
+}
+
+@media (max-width: 800px) {
+    #portrait {
+        flex: 30%;
+        max-width: 30%;
+        margin-left: 5%;
+    }
+
+    #photoself {
+        flex: 90%;
+        max-width: 90%; 
+        margin-top: 25%;
+        width: auto;
+        height: auto;
+        min-height: 250px;
+    }
+}
